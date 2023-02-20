@@ -1,0 +1,44 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom" ,
+				"navigationBarTextStyle": "white" 
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationStyle": "custom" ,
+				"navigationBarTextStyle": "white" 
+			}
+		},
+		{
+			"path": "pages/my/login",
+			"style": {
+				"navigationStyle": "custom" ,
+				"navigationBarTextStyle": "white" 
+			}
+		},
+		{
+			"path": "pages/my/register",
+			"style": {
+				"navigationStyle": "custom" ,
+				"navigationBarTextStyle": "white" 
+			}
+		}
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "超级智能聊天",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+
+	"uniIdRouter": {}
+}
