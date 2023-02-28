@@ -1,6 +1,6 @@
 
 # chatgpt聊天小程序
-> chatGPT 拥有广泛的知识库，能够回答各种话题的问题，比如历史、科学、文化等。 它能够提供详细的信息和细节，并且能够根据上下文调整回答，小程序是调用GPT-3.5接口，效果类似chatgpt，前端使用uniapp，后端用wordpress框架，可在后台设置openai api key，支持联系上下文多次对话。
+> chatGPT 拥有广泛的知识库，能够回答各种话题的问题，比如历史、科学、文化等。 它能够提供详细的信息和细节，并且能够根据上下文调整回答，小程序是调用GPT-3接口，效果类似chatgpt，前端使用uniapp，uview组件，后端用wordpress框架，可在后台设置openai api key，支持联系上下文多次对话。
 
 ### 官方地址
 [https://www.xenice.com/article/chatgpt%e8%81%8a%e5%a4%a9app%e5%89%8d%e7%ab%afuniapp%e6%a8%a1%e6%9d%bf](https://www.xenice.com/article/chatgpt%e8%81%8a%e5%a4%a9app%e5%89%8d%e7%ab%afuniapp%e6%a8%a1%e6%9d%bf)
@@ -47,3 +47,7 @@ const getSettings= ()=>{
 
 <img class="img2" src="https://www.xenice.com/wp-content/uploads/2023/02/微信截图_20230218132026.png" />
 
+### 更新说明
+- 添加长按复制信息
+- 添加分享功能
+- 修复响应失败计数问题

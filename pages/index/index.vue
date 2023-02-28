@@ -25,7 +25,7 @@
 							<!-- 	<image v-if="!x.my" class="chat-img" src="../../static/..." mode="aspectFill" ></image> -->
 
 							<view class="chat chat-human">
-								<text style="word-break: break-all;">{{x.msg}}</text>
+								<text style="word-break: break-all;" @longpress="copyText(x.msg)">{{x.msg}}</text>
 							</view>
 							<!-- <image class="chat-img " src="../../static/..." mode="aspectFill" ></image> -->
 						</view>
@@ -35,7 +35,7 @@
 								<image style="height: 75rpx;width: 75rpx;" src="../../static/robt.png" mode="aspectFit"></image>
 							</view> -->
 							<view class="chat chat-ai">
-								<text style="word-break: break-all;">{{x.msg}}</text>
+								<text style="word-break: break-all;" @longpress="copyText(x.msg)">{{x.msg}}</text>
 							</view>
 						</view>
 					</view>
@@ -156,6 +156,7 @@
 			this.loaded =true;
 			
 		},
+		
 		mounted() {
 			/*
 			const originalHeight=document.documentElement.clientHeight ||document.body.clientHeight;
@@ -289,7 +290,18 @@
 					url:'/pages/my/my'
 				})
 			},
-
+			copyText(msg) {
+				uni.setClipboardData({
+				data:msg,
+				success() {
+					uni.showToast({
+						title:'已复制到剪贴板',
+						icon:'none',
+						position:'top'
+					        })
+						}
+					})
+			},
 			/*
 			hideKey() {
 				uni.hideKeyboard()

@@ -8,7 +8,7 @@
 			site: '',
 			// end multisite
 			
-			server: 'https://www.xenice.com/',
+			server: 'https://www.xneice.com/',
 			slug: 'wp-json/chat/v1/',
 			base: '',
 			settings:{}

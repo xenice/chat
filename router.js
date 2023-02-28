@@ -4,7 +4,7 @@ import http from '@/utils/http.js';
 
 const getSettings= ()=>{
 	//let base = getApp().globalData.base;
-	let base = 'https://www.xenice.com/wp-json/chat/v1/';
+	let base = 'https://www.xneice.com/wp-json/chat/v1/';
 	return http.get(base+'settings', {});
 }
 

@@ -1,7 +1,9 @@
 import App from './App'
 import store from './store'
 import uView from '@/uni_modules/uview-ui'
+import share from '@/utils/share'
 Vue.use(uView)
+Vue.mixin(share)
 
 
 import Vue from 'vue'
